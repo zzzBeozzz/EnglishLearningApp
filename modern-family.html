@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Family - English Learning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <h1>Learn English with Modern Family</h1>
+
+        <!-- Video Player Section -->
+        <div class="video-section">
+            <video id="videoPlayer" controls autoplay muted>
+                <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Highlighted Phrase: <strong id="highlightedWord"></strong></p>
+        </div>
+
+        <!-- Question Section -->
+        <div class="question-section">
+            <h3 id="question"></h3>
+            <div class="options" id="options"></div>
+            <button onclick="checkAnswer()">Submit</button>
+        </div>
+
+        <!-- Definition Section -->
+        <div class="definition-section" id="definitionSection">
+            <h3>Definition:</h3>
+            <p id="definition"></p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button onclick="previousClip()">Previous</button>
+            <button onclick="nextClip()">Next</button>
+            <button onclick="loopClip()">Loop</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

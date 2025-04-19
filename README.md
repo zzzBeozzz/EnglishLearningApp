@@ -37,7 +37,7 @@ there are technical issues and copyright issues to acquire the video clips, thus
 So data collected are mostly on China websites or YouTube, therefore the data collection seems insufficient. 
 
 ## Improvement and upcoming plans 
-Acquiring data through other format such as purchasing CDs of Sitcom series, and add more features written from revised proposal. 
+Acquiring data through other format such as purchasing CDs of Sitcom series, mp4 video clips then mgiht be enhanced, do not have to be raw file downlaod. More so, add more features written from revised proposa l such as level difficulties, multiplayer mode that these are worth to improve the app.
 
 
 

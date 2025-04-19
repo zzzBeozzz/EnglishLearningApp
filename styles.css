@@ -3,7 +3,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff; /* Changed to white for better contrast on vibrant backgrounds */
 }
 
 .feature-page {
@@ -15,34 +15,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.feature-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3)); /* Vibrant magenta-cyan overlay */
+    z-index: 0;
 }
 
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for contrast */
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, #6b48ff 0%, #b66bff 100%); /* Changed to blue-purple gradient */
+    background: linear-gradient(135deg, #ff00ff 0%, #00ffcc 100%); /* Magenta to cyan gradient */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5); /* Neon glow */
 }
 
 h1 {
     text-align: center;
-    color: #2c3e50;
-    font-size: 2.5em;
+    color: #fff;
+    font-size: 2.8em;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffcc; /* Neon text glow */
 }
 
 h2 {
     text-align: center;
-    color: #34495e;
-    font-size: 1.8em;
+    color: #fff;
+    font-size: 2em;
     margin-bottom: 25px;
+    text-shadow: 0 0 5px #00ffcc;
 }
 
 .sitcom-selection {
@@ -59,53 +75,58 @@ h2 {
 .sitcom-button {
     padding: 15px 35px;
     font-size: 1.3em;
-    background: linear-gradient(45deg, #1e90ff, #00b7eb);
+    background: linear-gradient(45deg, #ff3366, #ff66cc); /* Bright pink gradient */
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 15px rgba(255, 51, 102, 0.7); /* Neon pink glow */
+    animation: pulse 2s infinite;
 }
 
 .sitcom-button:hover {
-    transform: rotate(5deg); /* Changed to rotate instead of scale */
-    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
+    transform: rotate(5deg);
+    box-shadow: 0 0 25px rgba(255, 51, 102, 1), 0 0 40px rgba(255, 102, 204, 0.8);
 }
 
 .sitcom-button.disabled {
-    background: linear-gradient(45deg, #cccccc, #aaaaaa);
+    background: linear-gradient(45deg, #555, #777);
     cursor: not-allowed;
     box-shadow: none;
+    animation: none;
 }
 
 .video-section {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Cyan glow */
 }
 
 video {
     width: 100%;
     max-width: 650px;
-    border: 2px solid #007BFF;
+    border: 2px solid #00ffcc;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Brighter cyan glow */
 }
 
 p {
     font-size: 1.2em;
     margin: 15px 0;
-    color: #2c3e50;
+    color: #fff;
+    text-shadow: 0 0 5px #ff3366;
 }
 
 .question-section {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 51, 102, 0.5); /* Pink glow */
 }
 
 .options {
@@ -116,47 +137,51 @@ p {
     display: block;
     margin: 8px 0;
     font-size: 1.1em;
-    color: #34495e;
+    color: #fff;
     cursor: pointer;
+    text-shadow: 0 0 3px #00ffcc;
 }
 
 .options input[type="radio"] {
     margin-right: 10px;
-    accent-color: #007BFF;
+    accent-color: #ff3366; /* Bright pink radio buttons */
 }
 
 button {
     padding: 12px 25px;
     margin: 5px;
-    background: linear-gradient(45deg, #ff6f61, #ff9472);
+    background: linear-gradient(45deg, #33cc33, #66ff66); /* Lime green gradient */
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 10px rgba(255, 111, 97, 0.3);
+    box-shadow: 0 0 15px rgba(51, 204, 51, 0.7); /* Lime glow */
+    animation: pulse 2s infinite;
 }
 
 button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(255, 111, 97, 0.5);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(51, 204, 51, 1), 0 0 40px rgba(102, 255, 102, 0.8);
 }
 
 .definition-section {
     margin-top: 25px;
     padding: 15px;
-    background-color: #e9ecef;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     display: none;
     transform: scale(0.95);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .definition-section.correct {
-    background-color: #d4edda;
+    background-color: rgba(51, 255, 51, 0.3); /* Vibrant green for correct */
     transform: scale(1);
     opacity: 1;
+    box-shadow: 0 0 20px rgba(51, 255, 51, 0.8);
 }
 
 .navigation {
@@ -165,19 +190,25 @@ button:hover {
 
 /* Animations */
 .fade-in {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 .slide-in {
-    animation: slideIn 0.8s ease-out;
+    animation: slideIn 1s ease-out;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
+    0% { opacity: 0; transform: translateY(-30px); }
     100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideIn {
-    0% { opacity: 0; transform: translateX(-30px); }
+    0% { opacity: 0; transform: translateX(-40px); }
     100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); }
 }

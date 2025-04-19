@@ -181,3 +181,11 @@ button:hover {
     0% { opacity: 0; transform: translateX(-30px); }
     100% { opacity: 1; transform: translateX(0); }
 }
+
+.gradient-bg {
+    background: linear-gradient(135deg, #6b48ff 0%, #b66bff 100%);
+}
+.sitcom-button:hover {
+    transform: rotate(5deg);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
+}

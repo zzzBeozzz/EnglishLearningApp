@@ -7,17 +7,17 @@ As for my project, I created a language learning app  that teaches English throu
 ## Features 
 In the application, although there are only one series allowed, the basic features are so far spot on.
 
--Learner will choose a sitcom to start learning (currently only *Modern Family* is available).
+-Learner will choose a sitcom to start learning (currently only *Modern Family* is available)
 
--Watch video clips with highlighted English phrases.
+-Watch video clips with highlighted English phrases
 
--Answer multiple-choice questions to test learner understanding.
+-Answer multiple-choice questions to test learner understanding
 
--If choose wrong, they can choose again.
+-If choose wrong, they can choose again
 
--See definitions after correct answers.
+-See definitions after correct answers
 
--Vibrant design with neon colors, animations, and glowing effects!
+-Vibrant design with neon colors, animations, and glowing effects
 
 ## Files
 There are files uploaded for referencing, including:

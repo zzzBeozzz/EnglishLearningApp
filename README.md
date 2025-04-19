@@ -30,7 +30,7 @@ There are files uploaded for referencing, including:
 
 -script.js: Logic for video playback and questions
 
--MP4 files: 10 video clips for the target learning phrases/words
+-MP4 files: 10 video clips for the target learning phrases/words (to view, need to download as raw) 
 
 ## Limitations 
 there are technical issues and copyright issues to acquire the video clips, thus the copyright issues. 

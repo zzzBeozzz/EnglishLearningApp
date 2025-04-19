@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: #808080;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     color: #333;
@@ -27,7 +27,7 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, #2ecc71 0%, #1abc9c 100%); /* Changed to green-teal gradient */
+    background: linear-gradient(135deg, #6b48ff 0%, #b66bff 100%); /* Changed to blue-purple gradient */
 }
 
 h1 {
